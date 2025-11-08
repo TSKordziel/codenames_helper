@@ -1,0 +1,11 @@
+This is a placeholder file.
+
+The application requires a plain text file named 'codenames.txt' in the project root.
+
+This file should contain a list of unique words, one per line, which the application
+
+will randomly select from to populate the game board.
+
+Replace this content with your desired list of words (at least 25 unique words are needed
+
+for one game board).
