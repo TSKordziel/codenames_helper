@@ -42,8 +42,8 @@ rustup update
 Clone the Repository:
 
 ```
-git clone [Your Repository URL]
-cd codenames-helper
+git clone https://github.com/TSKordziel/codenames_helper
+cd codenames_helper
 ```
 
 
