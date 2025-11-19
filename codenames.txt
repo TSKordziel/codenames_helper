@@ -8,4 +8,5 @@ will randomly select from to populate the game board.
 
 Replace this content with your desired list of words (at least 25 unique words are needed
 
-for one game board).
+
+for one game board). and move it into the '/src' directory befor complileing.
