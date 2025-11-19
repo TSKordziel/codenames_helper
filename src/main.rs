@@ -63,7 +63,7 @@ enum Message {
 enum Choice {
     Red,
     Blue,
-    Nutral,
+    Neutral,
     Death,
 }
 
@@ -114,9 +114,9 @@ impl Card {
                         .spacing(3)
                         .width(FillPortion(4));
 
-                        let nutral = radio(
-                            "Nutral",
-                            (self.index, Choice::Nutral),
+                        let neutral = radio(
+                            "Neutral",
+                            (self.index, Choice::Neutral),
                             self.selection,
                             Message::RadioSelected,
                         )
@@ -135,7 +135,7 @@ impl Card {
                         .text_size(size.height * BUTTON_SIZE_FACTOR)
                         .spacing(3)
                         .width(FillPortion(4));
-                        row![red, blue, nutral, death]
+                        row![red, blue, neutral, death]
                             .height(Fill)
                             .width(Fill)
                             .padding(5)
@@ -165,7 +165,7 @@ impl Card {
                         border: border::rounded(CORNER_RAD),
                         ..container::Style::default()
                     },
-                    Choice::Nutral => container::Style {
+                    Choice::Neutral => container::Style {
                         background: Some(Background::Color(Color::new(0.82, 0.71, 0.55, 1.0))),
                         border: border::rounded(CORNER_RAD),
                         ..container::Style::default()
