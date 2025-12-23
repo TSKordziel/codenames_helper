@@ -63,9 +63,9 @@ cd codenames_helper
 
 
 ### Create the Word List:
-As the application uses include_str!, you must create a file named codenames.txt in the root directory. This file should contain a list of words, with one unique word per line.
+As the application uses include_str!, you must create a file named codenames.txt in the '/src' directory. This file should contain a list of words, with one unique word per line.
 
-Note: This repository includes a placeholder file (codenames.txt) with instructions. The application will not run without a list of at least 25 words.
+Note: This repository includes a placeholder file (codenames.txt) with instructions in the root directory. The application will not run without a list of at least 25 words.
 
 ### Run the Application:
 
