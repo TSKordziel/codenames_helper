@@ -1,28 +1,43 @@
 # Codenames Helper
 
-A cross-platform desktop application designed to assist players of the board game Codenames by providing a digital, responsive 5x5 board for marking card selections. This project serves as a showcase of application architecture and GUI development in Rust.
+A cross-platform desktop application designed to assist players of the board game **Codenames** by providing a digital, responsive 5x5 board for marking card selections. This project serves as a focused showcase of application architecture, GUI development, and systems-level programming in Rust.
+
+## 🎯 Project Purpose
+
+This project was built with two explicit goals:
+
+1. **Learn how to design a GUI layer on top of backend business logic**  
+   The application emphasizes a clean separation between core state/logic and presentation, mirroring how real-world desktop or frontend systems interface with non-UI logic.
+
+2. **Solidify practical Rust skills through a complete, user-facing application**  
+   Rather than isolated exercises, this project applies Rust concepts—ownership, enums, pattern matching, and message-driven state transitions—in a cohesive, end-to-end program.
+
+While the game itself is simple, the architectural decisions reflect patterns that scale to more complex applications.
 
 ## 🛠️ Technical Implementation
 
-This application was developed to explore modern application architecture and systems-level programming concepts.
+This application was developed to explore modern application architecture and systems programming concepts.
 
 ## Core Technologies
 
-Language: Rust
-
-GUI Framework: iced (a simple, clean, and responsive GUI library)
-
-State Management: Implements the Elm Architecture pattern for state management (Model, View, Update, Messages), ensuring clear separation between application state and UI logic.
-
-Randomness: Uses the standard rand crate for secure and efficient word shuffling.
+- **Language:** Rust  
+- **GUI Framework:** `iced` — a clean, cross-platform, declarative GUI library  
+- **State Management:** Elm Architecture (Model, View, Update, Messages), enforcing a clear boundary between state, logic, and rendering  
+- **Randomness:** `rand` crate for efficient and reliable word shuffling  
 
 ## Architectural Highlights
 
-Reactive State Transitions: The application manages state through defined Message types, demonstrating a functional approach to handling user input and triggering reliable UI updates.
+- **Message-Driven State Updates**  
+  All user interactions flow through explicit `Message` types, ensuring predictable state transitions and making the application easy to reason about and extend.
 
-Responsive Layout: The display adapts to the window size, including proportional font scaling based on the maximum word length, which is crucial for a consistent user experience.
+- **Backend-First Design**  
+  Game state and logic are modeled independently of the UI, allowing the GUI to act as a thin, reactive layer over well-defined data structures.
 
-Memory Safety: Leveraging Rust's ownership system ensures the application is free from common memory-related bugs and guarantees high performance.
+- **Responsive Layout**  
+  The interface adapts to window size, including proportional font scaling based on maximum word length to maintain readability across screen sizes.
+
+- **Memory Safety by Construction**  
+  Rust’s ownership and type system eliminate entire classes of runtime errors while maintaining performance suitable for real-time UI updates
 
 ## 🚀 Getting Started
 
